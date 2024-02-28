@@ -1,0 +1,14 @@
+currency;code;bid;ask
+dolar amerykański;USD;3.9406;4.0202
+dolar australijski;AUD;2.5789;2.6309
+dolar kanadyjski;CAD;2.9161;2.9751
+euro;EUR;4.2719;4.3583
+forint (Węgry);HUF;0.010951;0.011173
+frank szwajcarski;CHF;4.4794;4.5698
+funt szterling;GBP;4.9938;5.0946
+jen (Japonia);JPY;0.026203;0.026733
+korona czeska;CZK;0.1686;0.172
+korona duńska;DKK;0.573;0.5846
+korona norweska;NOK;0.3738;0.3814
+korona szwedzka;SEK;0.3821;0.3899
+SDR (MFW);XDR;5.2288;5.3344

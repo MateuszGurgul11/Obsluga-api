@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="/" method="post">
+        <label>Wybierz walute</label>
+        <select name="curency_type" id="curency_type">
+            <option value="USD">Dolar Amerykansko</option>
+            <option value="AUD">Dolar Australisjki</option>
+            <option value="CAD">Dolar Kanadyjski</option>
+            <option value="EUR">Euro</option>
+            <option value="HUF">Forint</option>
+            <option value="CHF">Frank</option>
+            <option value="GBP">Funt</option>
+            <option value="JPY">Jen</option>
+            <option value="CZK">Korona Czeska</option>
+            <option value="DKK">Korona Dunska</option>
+            <option value="NOK">Korona Norweska</option>
+            <option value="SEK">Korona Szwedzka</option>
+            <option value="XDR">SDR</option>
+        </select>
+        <br>
+        <label>Wpisz ilosc waluty</label>
+        <input type="number" name="curency_amount" id="curency_amount">
+        <br>
+        <input type="submit" value="Przelicz">
+
+        {% if cost %}
+            <p>Koszt w: {{ cost }} PLN</p>
+        {% endif %}
+    </form>
+</body>
+</html>
