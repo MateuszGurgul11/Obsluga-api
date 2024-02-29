@@ -11,12 +11,11 @@ data = response.json()
 rates = data[0]['rates']
 
 def import_data_to_csv():
-    with open('rates.txt', 'w', newline='') as csvfile:
+    with open('rates.csv', 'w', newline='') as csvfile:
         fieldnames = ["currency", "code", "bid", "ask"]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, delimiter=';')
 
         writer.writeheader()
-        
         for rate in rates:
             writer.writerow(rate)
 
@@ -24,7 +23,7 @@ import_data_to_csv()
 
 def calculate_curency(curency_amount, curency_type):
     cost = 0
-    with open('rates.txt', 'r', newline='') as csvfile:
+    with open('rates.csv', 'r', newline='') as csvfile:
         reader = csv.DictReader(csvfile, delimiter=';')
         for row in reader:
             if row['code'] == curency_type:
